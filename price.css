@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&family=Young+Serif&display=swap");
+
+.background-image {
+    background-image: url('/image/pexels-sebastian-ervi-1763075.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; 
+}
+
+* {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+section {
+    padding: 2rem 5%; /* Adjusted padding for responsiveness */
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    background: #af2855;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff; /* Text color */
+}
+
+html {
+    font-size: 62.5%;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 10%; /* Adjusted padding for responsiveness */
+}
+
+.header .logo {
+    font-weight: bolder;
+    color: #fff;
+    font-size: 5rem;
+}
+
+.header .logo span {
+    color: #a01c48;
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover {
+    color: #a01c48;
+}
+
+#menu-bars {
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.content-container {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    filter: grayscale(10%);
+}
+
+.heading {
+    padding-top: 8%; /* Adjusted padding for responsiveness */
+    color: #a01c48;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3.5rem; /* Adjusted font size for responsiveness */
+}
+
+.price-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem; /* Adjusted padding for responsiveness */
+}
+
+.price-card {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    text-align: center;
+    width: 250px;
+}
+
+.price-card h2 {
+    color: #333;
+    font-size: 1.5rem; /* Adjusted font size for responsiveness */
+    margin-bottom: 1rem; /* Adjusted margin for responsiveness */
+}
+
+.price-card h3 {
+    margin-bottom: 0.5rem; /* Adjusted margin for responsiveness */
+    font-size: 1rem; /* Adjusted font size for responsiveness */
+    color: #af2855;
+}
+
+.price-card li {
+    font-size: 1rem; /* Adjusted font size for responsiveness */
+}
+
+.comparison-points {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comparison-points li {
+    margin-bottom: 0.5rem; /* Adjusted margin for responsiveness */
+    color: #666;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .header .logo {
+        font-size: 3rem;
+    }
+
+    .header .navbar a {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 10px 16px; /* Adjusted padding for responsiveness */
+    }
+
+    .heading {
+        font-size: 2rem;
+        padding-top: 8%;
+    }
+
+    .price-container {
+        padding: 1rem; /* Adjusted padding for responsiveness */
+    }
+
+    .price-card {
+        width: 40%; /* Adjusted width for responsiveness */
+        margin: 1rem 0;
+    }
+}
